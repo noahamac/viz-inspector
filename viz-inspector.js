@@ -7,15 +7,13 @@ looker.plugins.visualizations.add({
     element.innerHTML = `
       <style>
         .viz-inspector {
-          /* Vertical centering */
           height: 100%;
           left: 0px;
           top: 0px;
         }
       </style>
     `;
-    var container = element.appendChild(document.createElement("div"));
-    container.className = "viz-inspector";
+    var container = element.appendChild(document.createElement("body"));
     container.innerHTML = `<pre id="json-renderer"></pre>`
   },
   updateAsync: function(data, element, config, queryResponse, details, done) {
