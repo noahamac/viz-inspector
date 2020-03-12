@@ -20,7 +20,9 @@ looker.plugins.visualizations.add({
   },
   updateAsync: function(data, element, config, queryResponse, details, done) {
     this.clearErrors();
-    $('#json-renderer').jsonViewer(data);
+    $(function() {
+      $('#json-renderer').jsonViewer(data);
+    });
     done()
   }
 });
