@@ -1,8 +1,8 @@
 project_name: "viz-inspector-marketplace"
 
 visualization: {
-  id: "viz-inspector-mp"
+  id: "viz-inspector"
   file: "viz-inspector.js"
   label: "Viz Inspector"
-  dependencies: ["https://cdn.jsdelivr.net/npm/json-formatter-js@2.3.4/dist/json-formatter.umd.min.js"]
+  dependencies: ["https://code.jquery.com/jquery-3.4.1.min.js", "https://cdn.jsdelivr.net/npm/json-tree-viewer@0.0.2/libs/jsonTree/jsonTree.min.js"]
 }
