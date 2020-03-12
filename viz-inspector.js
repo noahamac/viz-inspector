@@ -17,7 +17,7 @@ looker.plugins.visualizations.add({
   },
   updateAsync: function(data, element, config, queryResponse, details, done) {
     this.clearErrors();
-    JSONFormatter(data)
+    data != undefined ? JSONFormatter(data) : JSONFormatter({})
     done()
   }
 });
