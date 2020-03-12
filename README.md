@@ -22,7 +22,7 @@ Use this viz as you would any other. Build a query, hit run, select 'Viz Inspect
 <img src="https://github.com/noahamac/viz-inspector/blob/master/demo.png">
 
 
-Click on field key or '...' to toggle expand/collapse. 
+Click on object key or '...' to toggle expand/collapse. 
 <img src="https://github.com/noahamac/viz-inspector/blob/master/demo2.png">
 
 
