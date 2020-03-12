@@ -1,5 +1,6 @@
 ## Viz Inspector
-> Peek inside Looker's query response objects
+Peek inside Looker's query response objects
+Often used with: https://lookervisbuilder.com/
 
 ### Installation 
 Navigate to: `https://{YourLookerInstance}/marketplace/installed`
