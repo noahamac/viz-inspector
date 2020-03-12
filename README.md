@@ -1,5 +1,6 @@
 ## Viz Inspector
 Peek inside Looker's query response objects
+
 Often used with: https://lookervisbuilder.com/
 
 ### Installation 
