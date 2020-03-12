@@ -14,13 +14,10 @@ looker.plugins.visualizations.add({
       </style>
     `;
     var container = element.appendChild(document.createElement("body"));
-    container.innerHTML = `<pre id="json-renderer"></pre>`
   },
   updateAsync: function(data, element, config, queryResponse, details, done) {
     this.clearErrors();
-    $(function() {
-      $('#json-renderer').jsonViewer(data);
-    });
+    JSONFormatter(data)
     done()
   }
 });
