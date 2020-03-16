@@ -1,5 +1,5 @@
 ## Viz Inspector
-Peek inside Looker's query response objects
+Peek inside Looker's visualization objects
 
 Often used with: https://lookervisbuilder.com/
 
@@ -25,6 +25,9 @@ Use this viz as you would any other. Build a query, hit run, select 'Viz Inspect
 Click on object key or '...' to toggle expand/collapse. 
 <img src="https://github.com/noahamac/viz-inspector/blob/master/demo2.png">
 
+
+Ex: Do my table calculations resolve to dimension-like for Sankey Viz compatibility? 
+<img src="https://github.com/noahamac/viz-inspector/blob/master/demo3.png">
 
 
 
