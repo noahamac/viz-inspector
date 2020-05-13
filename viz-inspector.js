@@ -18,14 +18,14 @@ looker.plugins.visualizations.add({
     .jsontree_bg {
         background: #FFF;
     }
-    
+
     /* Styles for the container of the tree (e.g. fonts, margins etc.) */
     .jsontree_tree {
         margin-left: 30px;
         font-family: 'PT Mono', monospace;
         font-size: 14px;
     }
-    
+
     /* Styles for a list of child nodes */
     .jsontree_child-nodes {
         display: none;
@@ -36,7 +36,7 @@ looker.plugins.visualizations.add({
     .jsontree_node_expanded > .jsontree_value-wrapper > .jsontree_value > .jsontree_child-nodes {
         display: block;
     }
-    
+
     /* Styles for labels */
     .jsontree_label-wrapper {
         float: left;
@@ -54,7 +54,7 @@ looker.plugins.visualizations.add({
     .jsontree_node_marked > .jsontree_label-wrapper > .jsontree_label {
         background: #fff2aa;
     }
-    
+
     /* Styles for values */
     .jsontree_value-wrapper {
         display: block;
@@ -83,7 +83,7 @@ looker.plugins.visualizations.add({
         color: #600100;
         font-weight: bold;
     }
-    
+
     /* Styles for active elements */
     .jsontree_expand-button {
         position: absolute;
@@ -114,22 +114,22 @@ looker.plugins.visualizations.add({
         cursor: default !important;
     }
     </style>`
-    
+
     var container = element.appendChild(document.createElement("div"));
     container.className = 'viz-inspector'
-    
+
     var collapse_btn = element.appendChild(document.createElement("BUTTON"));
     collapse_btn.innerHTML = `Collapse`
     collapse_btn.className = 'collapse_btn'
-    
+
     var expand_btn = element.appendChild(document.createElement("BUTTON"));
     expand_btn.innerHTML = `Expand`
     expand_btn.className = 'expand_btn'
-    
+
     var copy_btn = element.appendChild(document.createElement("BUTTON"));
     copy_btn.innerHTML = `Copy to Clipboard`
     copy_btn.className = 'copy_btn'
-    
+
     var selectList = element.appendChild(document.createElement("select"));
     selectList.innerHTML = `
       <option value="data">data</option>
@@ -138,7 +138,7 @@ looker.plugins.visualizations.add({
       <option value="details">details</option>
     `
     selectList.className = 'select_list'
-    
+
     tree = jsonTree.create({}, element);
   },
   updateAsync: function(data, element, config, queryResponse, details, done) {
@@ -157,7 +157,9 @@ looker.plugins.visualizations.add({
     });
     $('.select_list').on('change', function () {
       obj_name = document.querySelector('.select_list').value
-      tree.loadData(eval(obj_name));
+      obj_name == 'config' ?
+      tree.loadData(JSON.parse(JSON.stringify(eval(obj_name)).replace(/undefined/g, '""')))
+      : tree.loadData(eval(obj_name));
     });
     done()
   }
