@@ -11,7 +11,7 @@ Navigate to: `https://{YourLookerInstance}/marketplace/installed`
 Point to this Repo:
 > Git Repository URL: `git://github.com/noahamac/viz-inspector/`
 
-> Git Commit SHA: `3427367ce9beade8520d5b16927c5f114303a5ab`
+> Git Commit SHA: `e78cd9c42f04835d5fd7b48613b81a4b41c45516`
 
 
 ### Usage
