@@ -3,7 +3,7 @@
   "category_label": "Plug-ins",
   "branding": {
     "image_uri": "https://imageog.flaticon.com/icons/png/512/49/49116.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF",
-    "tagline": "Peek inside looker's viz objects."
+    "tagline": "Peek inside looker's custom viz API objects."
   },
     "constants": {
         "VIS_LABEL": {
