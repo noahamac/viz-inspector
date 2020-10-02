@@ -2,7 +2,7 @@
   "label": "Viz Inspector",
   "category_label": "Plug-ins",
   "branding": {
-    "image_uri": "https://imageog.flaticon.com/icons/png/512/49/49116.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF",
+    "image_uri": "https://marketplace-api.looker.com/visualization-screenshots/inspector_icon.png",
     "tagline": "Peek inside looker's custom viz API objects."
   },
     "constants": {
