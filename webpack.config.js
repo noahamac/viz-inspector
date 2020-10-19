@@ -5,7 +5,7 @@ const UglifyJSPlugin = require("uglifyjs-webpack-plugin");
 var webpackConfig = {
   mode: 'production',
   entry: {
-    calendar_chart: "./src/calendar_visualization/calendar_chart_container.js",
+    dist: "./src/viz-inspector/inspector_container.js",
   },
   devServer: {
     contentBase: './dist',

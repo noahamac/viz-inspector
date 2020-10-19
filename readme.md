@@ -1,4 +1,5 @@
-# Calendar Heatmap Visualization
+# Viz Inspector
+Custom viz development helper viz
 
 ### What if I find an error? Suggestions for improvements?
 Great! Marketplace content -- including visualizations -- were designed for continuous improvement through the help of the entire Looker community and we'd love your input. To report an error or improvement recommendation, please reach out to Looker support via email to support@looker.com or via chat to submit a request. Please be as detailed as possible in your explanation and we'll address it as quick as we can.
@@ -26,7 +27,7 @@ Great! Marketplace content -- including visualizations -- were designed for cont
     ```
     Your compiled code can be found in this repo.
 
-**`calendar_chart.js`**: This visualization's minified distribution file. 
+**`dist.js`**: This visualization's minified distribution file. 
 
 **`LICENSE`**: Looker's Marketplace content License file.
 
