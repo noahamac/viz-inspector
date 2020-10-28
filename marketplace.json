@@ -1,9 +1,9 @@
 {
-  "label": "Calendar Heatmap Visualization",
+  "label": "Viz Inspector",
   "category_label": "Plug-ins",
   "branding": {
     "image_uri": "https://marketplace-api.looker.com/visualization-screenshots/calendar_icon.png",
-    "tagline": "Use the Calendar Heatmap to display a date dimension and measure and find trends over time at the Year, Month, and Week level."
+    "tagline": "Use viz inspector to peek into custom viz object."
   },
 
     "constants": {
