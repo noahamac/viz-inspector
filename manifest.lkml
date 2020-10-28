@@ -12,6 +12,6 @@ constant: VIS_ID {
 
 visualization: {
   id: "@{VIS_ID}"
-  url: "dist.js"
+  file: "dist.js"
   label: "@{VIS_LABEL}"
 }
