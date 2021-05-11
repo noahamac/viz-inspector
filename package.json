@@ -30,7 +30,7 @@
     "eslint-plugin-react": "^7.14.3",
     "js-yaml": "~3.13.1",
     "jsdom": "^11.11.0",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "moment": "^2.24.0",
     "rainbowvis.js": "^1.0.1",
     "react": "^16.8.3",
